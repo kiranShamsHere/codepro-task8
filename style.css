@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.7rem 12% 0.7rem;
+    /* background: rgba(0, 0, 0, 0.075); */
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.navbar a {
+    font-size: 0.9rem;
+    color: #333;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #000;
+    border-bottom: 3px solid #000;
+    transition: 0.3s ease;
+}
+
+#menu-icon {
+    font-size: 1.5rem;
+    color: #000;
+    display: none;
+}
+
+.logo {
+    display: none;
+}
+
+.right button {
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding: 2px 8px;
+}
+
+.right button:hover {
+    background: #777;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 3rem 0% 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.box1 {
+    height: 100%;
+}
+
+.box1 .head {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+}
+
+.box1 .head h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.box1 .head h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #777;
+    margin-right: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.show {
+    /* display: none; */
+    font-size: 14px;
+}
+
+.head i {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #777;
+}
+
+.image img {
+    border-radius: 10px;
+}
+
+.box2 .contentBox {
+    background: rgb(121, 16, 51);
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 100%;
+    /* height: 200px; */
+    padding: 10px 20px;
+}
+
+.contentBox h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contentBox h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.contentBox div {
+    text-align: right;
+}
+
+.contentBox div button {
+    margin-bottom: 2px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+}
+
+.contentBox div button:hover {
+    background: transparent;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.contentImage {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.contentImage img {
+    border-radius: 10px;
+    width: 400px;
+    height: 230px;
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 2rem 1%;
+    }
+
+    .section {
+        min-height: 100vh;
+        /* padding: 7rem 3% 2rem; */
+        padding-top: 5rem;
+        padding-left: 0;
+        padding-bottom: 3rem;
+        padding-right: 0;
+        padding-left: 2%;
+        width: 100%;
+        margin: 0;
+        padding: 7rem 10%;
+    }
+
+    .box1 {
+        width: 100%;
+    }
+
+    .image img {
+        width: 78vmin;
+    }
+
+    .contentImage img {
+        border-radius: 10px;
+        width: 400px;
+        width: 78vmin;
+        height: 230px;
+        /* height: auto; */
+    }
+
+    .box1 .head {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .box1 .head h2 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-right: 10px;
+    }
+
+    .box1 .head h5 {
+        font-size: 14px;
+        font-weight: 600;
+        color: #777;
+        margin-right: 2px;
+        cursor: pointer;
+    }
+
+    .head h5 i {
+        display: block;
+    }
+
+    .head i {
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        color: #777;
+    }
+
+    .image img {
+        border-radius: 10px;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .header {
+        background: rgba(0, 0, 0, 0.075);
+        padding: 1rem 2rem;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        padding: 1rem 3%;
+        background: #777;
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+        color: #fff;
+        border-bottom: 3px solid #000;
+        transition: 0.3s ease;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 2.5rem 0;
+        color: white;
+    }
+}
